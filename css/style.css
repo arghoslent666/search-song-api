@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-image: linear-gradient(to bottom,rgb(158, 158, 158), white );
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.input-box{
+    background-color: white;
+    padding: 12px;
+    display: flex;
+    gap: 5px;
+    border-radius: 4px;
+}
+
+.input-box input{
+    outline: none;
+    border: solid 1px rgb(216, 216, 216);
+    padding: 5px;
+    border-radius: 4px;
+    width: 100%;
+}
+
+#btn{
+    border: solid 1px rgb(216, 216, 216);
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.card{
+    display: flex;
+    background-color: white;
+    padding: 20px;
+    gap: 40px;
+    border-radius: 10px;
+    box-shadow: 5px 4px 10px rgb(126, 126, 126);
+}
+
+.album-img{
+    border: solid 2px grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 240px;
+    height: 252px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 40%;
+    border-radius: 4px;
+}
+
+.album-img img{
+    width: 150px;
+    opacity: 0.8;
+}
+
+.artist span, .song span, .album span, .duration span{
+    color: rgb(126, 126, 126);
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.hidde{
+    display: none;
+}
+
+.err{
+    background-color: white;
+    padding: 13px;
+    border-radius: 4px;
+}
+
+@media (max-width:593px) {
+    .card{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 30px 0px;
+        width: 350px;
+    }
+
+    .container{
+        width: 350px;
+    }
+}
