@@ -20,9 +20,9 @@ const cardDiv = document.querySelector('.card');
 
 async function apiSong(artist, song, key){
     try{
-        const api = await fetch(`http://ws.audioscrobbler.com/2.0/?method=track.getInfo&api_key=${key}&artist=${artist}&track=${song}&format=json`)
+        const api = await fetch(`https://ws.audioscrobbler.com/2.0/?method=track.getInfo&api_key=${key}&artist=${artist}&track=${song}&format=json`)
         const json = await api.json()
-        console.log(json)
+        // console.log(json)
         artitsSpan.textContent = json.track.artist.name
         songSpan.textContent = json.track.name
         albumSpan.textContent = json.track.album.title
