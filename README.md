@@ -6,5 +6,4 @@ album, capa do album, e o duracao. Caso a api nao encontre nada ela retorna um m
 Brevemente irei trazer muitos projetos consumindo API no front-end, este foi o primeiro de muitos.
 
 ⚠️ - Este projeto foi feito usando uma ApiKey disponibilizada gratuitamente pelo site 'Last.fm API' aonde o usuario cria sua conta e pega sua chaveAPI de
-forma gratuita. Para testar minha aplicacao basta entrar no site, criar sua conta e pegar sua chaveAPI seguindo a documentacao oficial do site. Lembre-se de
-colcoar a sua chave api na variavel 'const api_key'. E somente desta forma voce poderar testar a minha aplicacao
+forma gratuita. Caso voce quiser pegar sua propria apiKey fique a vontade. Lembre-se de colocar a sua chave api na variavel 'const api_key'.
